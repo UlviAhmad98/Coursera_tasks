@@ -13,8 +13,10 @@ import random
 computer_hand=random.choice(list)
 
 user_hand=input('rock, scissors, paper? ')
-
-if computer_hand==user_hand:
+if user_hand=='x':
+    print("See you again!")
+        
+elif computer_hand==user_hand:
     print('Draw!')
 elif computer_hand=='rock' and user_hand=='paper':
     print('You are goddamn on fire!')
@@ -28,3 +30,4 @@ elif computer_hand=='scissors' and user_hand=='rock':
 else:
     print('Computer kicked you so hard!')
     print('Computer choosed ' + computer_hand)
+
