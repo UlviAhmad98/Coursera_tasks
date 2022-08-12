@@ -15,8 +15,8 @@ lst=tree.findall('comments/comment')
 for item in lst:
     count_n=int(item.find('count').text)
 
-    counter+=1
-    count+=count_n
+    counter+= 1
+    count+= count_n
     
 print('Count: ', counter)
 print('Sum: ', count)
